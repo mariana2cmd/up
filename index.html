@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CéuFlex | Tetos Retráteis Inovadores</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <i class="fas fa-cloud-sun"></i>
+      <span>CéuFlex</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#explicacao">Projeto</a></li>
+        <li><a href="#funcionalidades">Funcionalidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <button class="btn-contato-nav" onclick="scrollToContato()">
+      <i class="fas fa-headset"></i> Fale conosco
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Tetos retráteis que <br>revelam o céu</h1>
+        <p>Transforme qualquer ambiente com a tecnologia CéuFlex: abra, feche e controle a luz natural com um toque. Design elegante, funcionalidade inteligente.</p>
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="scrollToContato()">
+            <i class="fas fa-cart-plus"></i> Comprar agora
+          </button>
+          <button class="btn-outline" onclick="scrollToExplicacao()">
+            <i class="fas fa-play-circle"></i> Entenda o projeto
+          </button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="glass-card">
+          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <rect x="50" y="80" width="300" height="150" rx="20" fill="#1e3f52" stroke="#3fa7d6" stroke-width="3"/>
+            <line x1="50" y1="130" x2="350" y2="130" stroke="#3fa7d6" stroke-width="2" stroke-dasharray="8 6"/>
+            <circle cx="200" cy="105" r="15" fill="#3fa7d6" opacity="0.8"/>
+            <path d="M130 180 L180 140 L230 180 L280 140" stroke="#3fa7d6" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <rect x="150" y="190" width="100" height="20" rx="10" fill="#3fa7d6" opacity="0.6"/>
+            <text x="200" y="60" font-family="Arial" font-size="18" fill="#3fa7d6" text-anchor="middle" font-weight="bold">CéuFlex</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO EXPLICAÇÃO -->
+  <section id="explicacao" class="section">
+    <h2 class="section-title">Como funciona o projeto</h2>
+    <p class="section-sub">Entenda a engenharia por trás do teto retrátil que está revolucionando espaços abertos e fechados.</p>
+    <div class="grid-explicacao">
+      <div class="card-explicacao">
+        <i class="fas fa-cogs"></i>
+        <h3>Mecanismo inteligente</h3>
+        <p>Estrutura em alumínio aeroespacial com trilhos de precisão e motor silencioso. Sensores de chuva e vento integram-se ao sistema, fechando automaticamente em condições adversas.</p>
+      </div>
+      <div class="card-explicacao">
+        <i class="fas fa-sun"></i>
+        <h3>Controle de luz natural</h3>
+        <p>Lâminas retráteis que deslizam suavemente, permitindo dosar a entrada de sol e ventilação. Ideal para áreas gourmet, piscinas, varandas e coberturas.</p>
+      </div>
+      <div class="card-explicacao">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Automação total</h3>
+        <p>Comandado por app, controle remoto ou assistentes de voz (Alexa, Google). Programe horários, cenários e até integre com sistemas de iluminação.</p>
+      </div>
+      <div class="card-explicacao">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Resistência e durabilidade</h3>
+        <p>Materiais anticorrosivos, policarbonato alveolar com proteção UV e garantia de 10 anos. Suporta ventos de até 120 km/h na posição fechada.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO FUNCIONALIDADES -->
+  <section id="funcionalidades" class="features-interactive">
+    <h2 class="section-title">Funcionalidades que encantam</h2>
+    <p class="section-sub">Passe o mouse ou toque para explorar cada detalhe.</p>
+    <div class="features-grid">
+      <div class="feature-item" onclick="mostrarToast('Abertura suave e silenciosa em até 30 segundos!')">
+        <i class="fas fa-play"></i>
+        <div>
+          <h4>Abertura rápida</h4>
+          <p>Motor de alta performance com acionamento suave.</p>
+        </div>
+      </div>
+      <div class="feature-item" onclick="mostrarToast('Sensores integrados: chuva, vento e luminosidade.')">
+        <i class="fas fa-cloud-rain"></i>
+        <div>
+          <h4>Sensor climático</h4>
+          <p>Fecha automaticamente com chuva ou vento forte.</p>
+        </div>
+      </div>
+      <div class="feature-item" onclick="mostrarToast('Controle por voz: compatível com Alexa e Google Assistant.')">
+        <i class="fas fa-microphone-alt"></i>
+        <div>
+          <h4>Comando de voz</h4>
+          <p>Integração com assistentes virtuais.</p>
+        </div>
+      </div>
+      <div class="feature-item" onclick="mostrarToast('Design modular: adapta-se a qualquer vão ou formato.')">
+        <i class="fas fa-ruler-combined"></i>
+        <div>
+          <h4>Medidas personalizadas</h4>
+          <p>Projeto sob medida para seu espaço.</p>
+        </div>
+      </div>
+      <div class="feature-item" onclick="mostrarToast('Eficiência energética: reduz até 40% do uso de ar-condicionado.')">
+        <i class="fas fa-leaf"></i>
+        <div>
+          <h4>Ecoeficiente</h4>
+          <p>Conforto térmico com economia de energia.</p>
+        </div>
+      </div>
+      <div class="feature-item" onclick="mostrarToast('Instalação rápida e equipe especializada.')">
+        <i class="fas fa-tools"></i>
+        <div>
+          <h4>Instalação ágil</h4>
+          <p>Equipe própria e suporte pós-venda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO CONTATO -->
+  <section id="contato" class="contato-section">
+    <div class="contato-info">
+      <h2>Pronto para elevar seu espaço?</h2>
+      <p>Solicite um orçamento sem compromisso ou compre diretamente pelo formulário. Nossa equipe responde em até 2 horas úteis.</p>
+      <div class="info-item">
+        <i class="fas fa-phone-alt"></i>
+        <span>(11) 4002-8922</span>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <span>vendas@ceuflex.com.br</span>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>São Paulo - SP | Atendimento nacional</span>
+      </div>
+      <div class="info-item">
+        <i class="fab fa-whatsapp"></i>
+        <span>(11) 99999-8888</span>
+      </div>
+    </div>
+    <div class="contato-form">
+      <h3>Compre ou tire dúvidas</h3>
+      <form id="formContato" onsubmit="enviarFormulario(event)">
+        <div class="input-group">
+          <input type="text" id="nome" placeholder="Seu nome completo" required>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" placeholder="E-mail para contato" required>
+        </div>
+        <div class="input-group">
+          <input type="tel" id="telefone" placeholder="Telefone / WhatsApp">
+        </div>
+        <div class="input-group">
+          <textarea id="mensagem" placeholder="Descreva seu projeto ou dúvida..." required></textarea>
+        </div>
+        <button type="submit" class="btn-comprar">
+          <i class="fas fa-paper-plane"></i> Enviar e solicitar contato
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><i class="fas fa-cloud-sun"></i> CéuFlex — Tetos retráteis que conectam você ao céu. <i class="fas fa-cloud-sun"></i></p>
+    <p style="margin-top: 0.8rem; font-size: 0.9rem;">&copy; 2025 CéuFlex. Todos os direitos reservados. Projeto conceito inovador.</p>
+  </footer>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toastMessage">Mensagem</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
